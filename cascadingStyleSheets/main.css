@@ -1,0 +1,43 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+#title-slideshow-containter
+{
+  height: 90%;
+  width: auto;
+  box-shadow: 0 4px 16px 4px grey;
+  clip-path: polygon(0 0, 100% 0, 100% 200%, 0 200%);
+}
+
+.title-slideshow-image
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title-text
+{
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  font-size: 5vw;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: black;
+  letter-spacing: 2vw;
+}
+
+#top-word
+{
+  padding-right: 22%;
+  font-weight: lighter;
+}
+
+#bottom-word
+{
+  padding-left: 22%;
+  font-weight: normal;
+}
