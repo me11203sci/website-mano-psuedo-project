@@ -4,12 +4,23 @@
   margin: 0px;
 }
 
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+html
+{
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
 #title-slideshow-containter
 {
-  height: 90%;
-  width: auto;
-  box-shadow: 0 4px 16px 4px grey;
-  clip-path: polygon(0 0, 100% 0, 100% 200%, 0 200%);
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
 }
 
 .title-slideshow-image
@@ -22,8 +33,8 @@
 .title-text
 {
   position: absolute;
-  top: 45%;
-  left: 55%;
+  top: 45vh;
+  left: 55vw;
   font-size: 5vw;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: black;
@@ -40,4 +51,58 @@
 {
   padding-left: 22%;
   font-weight: normal;
+}
+
+.entry-wrapper
+{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  scroll-snap-align: start;
+}
+
+.entry-wrapper:nth-child(even)
+{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  direction: rtl;
+}
+
+.entry-text-containter
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  align-self: center;
+  direction: ltr;
+}
+
+.entry-title
+{
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 48px;
+}
+
+.entry-summary
+{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.entry-image
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.embedded-link
+{
+  font-weight: bold;
 }
