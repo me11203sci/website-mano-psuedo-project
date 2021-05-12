@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,600&family=Raleway&family=Yanone+Kaffeesatz:wght@200;400&display=swap');
+
 *
 {
   padding: 0px;
@@ -23,11 +25,12 @@ html
   scroll-snap-align: start;
 }
 
-.title-slideshow-image
+#title-slideshow-image
 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
 }
 
 .title-text
@@ -37,7 +40,7 @@ html
   left: 55vw;
   font-size: 5vw;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: black;
+  color: white;
   letter-spacing: 2vw;
 }
 
@@ -68,6 +71,7 @@ html
   width: 100%;
   display: grid;
   direction: rtl;
+  background-color: #ededed;
 }
 
 .entry-text-containter
@@ -85,13 +89,13 @@ html
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 600;
   font-style: italic;
-  font-size: 48px;
+  font-size: 4vw;
 }
 
 .entry-summary
 {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 .entry-image
@@ -99,7 +103,6 @@ html
   height: 100%;
   width: 100%;
   object-fit: cover;
-
 }
 
 .embedded-link
